@@ -9,7 +9,7 @@ import { API_BASE_URL } from '../api/api';
 import ProfileContent from '../components/ProfileContent'
 import { useRouter } from 'next/router'
 
-function profile(props) {
+function Profile(props) {
     const router = useRouter()
     const [profile,setProfile] = useState(null);
     const [error,setError] = useState('')
@@ -95,4 +95,4 @@ function profile(props) {
     );
 }
 
-export default profile;
+export default Profile;

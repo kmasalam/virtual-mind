@@ -5,7 +5,7 @@ const axios = require('axios');
 import Grid from '@mui/material/Grid';
 import NavigationBar from '../components/NavigationBar'
 import { API_BASE_URL } from '../api/api';
-import Loader from '../components/Loader';
+import Loader from '../components/Loader'
 import { useRouter } from 'next/router'
 
 function Tasks(props) {

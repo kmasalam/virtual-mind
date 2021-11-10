@@ -10,7 +10,7 @@ import CreateTaskForm from '../components/CreateTaskForm';
 import { useRouter } from 'next/router'
 
 
-function createTask(props) {
+function CreateTask(props) {
     const router = useRouter()
     const [showPage,setShowPage] = useState(false)
 
@@ -45,4 +45,4 @@ function createTask(props) {
     );
 }
 
-export default createTask;
+export default CreateTask;

@@ -6,8 +6,8 @@ import Grid from '@mui/material/Grid';
 // User Defined
 import NavigationBar from '../components/NavigationBar'
 import LeftBanner from '../components/LeftBanner';
-import SignUp from '../components/SignUp'
-import Login from '../components/Login'
+import SignUpForm from '../components/SignUp';
+
 
 export default function Index() {
   return (
@@ -20,7 +20,7 @@ export default function Index() {
                         <LeftBanner title={'Virtual Mind'}/>
                     </Grid>
                     <Grid item xs={4}>
-                        <SignUp/>
+                        <SignUpForm/>
                     </Grid>
                 </Grid>
             </Box>

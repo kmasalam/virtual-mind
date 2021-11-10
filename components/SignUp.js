@@ -12,7 +12,7 @@ import Grid from '@mui/material/Grid';
 import { useRouter } from 'next/router'
 const axios = require('axios');
 
-function SignUp(props) {
+function SignUpForm(props) {
     const router = useRouter()
     const [inputvalue,setValue] = useState({})
     const [signupstatus,setSignupstatus] = useState(false);
@@ -88,4 +88,4 @@ function SignUp(props) {
     );
 }
 
-export default SignUp;
+export default SignUpForm;

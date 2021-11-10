@@ -12,7 +12,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 const axios = require('axios');
 
-function SignUp(props) {
+function LoginForm(props) {
 
     const router = useRouter()
     const [inputvalue,setValue] = useState({})
@@ -85,11 +85,9 @@ function SignUp(props) {
                      Now
                 </p>
             </Box>
-            {
-                errorMessage ?? ''
-            }
+            
         </form>
     );
 }
 
-export default SignUp;
+export default LoginForm;
