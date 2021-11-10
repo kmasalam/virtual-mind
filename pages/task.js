@@ -20,7 +20,6 @@ function Tasks(props) {
         var currentSession = '';
         if(typeof(Storage) !== "undefined"){
             currentSession = sessionStorage.getItem("token")
-            console.log('currentSession',currentSession);
        }
         axios({
             method: 'get',
