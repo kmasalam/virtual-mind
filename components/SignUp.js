@@ -65,7 +65,7 @@ function SignUpForm(props) {
                 <TextField fullWidth  id="useremail" label="User Email" onChange={handleChange}  />
             </Box>
             <Box className='pb-3 w-full'>
-                <TextField fullWidth  id="userpass" label="User Password" onChange={handleChange}  />
+                <TextField fullWidth type="password"  id="userpass" label="User Password" onChange={handleChange}  />
             </Box>
             <Box className='pb-3 w-full'>
                 <TextField fullWidth  id="userage" type="number" label="User Age"  onChange={handleChange} />
