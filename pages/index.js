@@ -22,6 +22,9 @@ export default function Index() {
       }, []);
   return (
     <Box className='flex flex-col '>
+        <Head>
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700||display=swap" rel="stylesheet"/>
+        </Head>
         <NavigationBar/>
         <Container maxWidth="lg" className='flex-grow'>
             <Box >

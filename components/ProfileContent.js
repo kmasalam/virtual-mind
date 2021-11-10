@@ -6,7 +6,6 @@ import CardContent from '@mui/material/CardContent';
 function ProfileContent(props) {
     
     const {name,age,email} = props.profileData
-    console.log('props is',name);
     return (
         <Card >
             <CardContent>

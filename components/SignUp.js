@@ -42,7 +42,6 @@ function SignUpForm(props) {
              password: inputvalue.userpass,
          }
        }).then(function (response) {
-         console.log('res',response);
          let statusCode = response.status;
          if(statusCode == '201'){
             setSignupstatus(true);
@@ -56,11 +55,6 @@ function SignUpForm(props) {
        });
     }
  
-    
-    if(typeof(Storage) !== "undefined"){
-         console.log(sessionStorage.getItem("token"));
-    }
-   
 
     return (
         <form  noValidate autoComplete="off" className="w-full h-screen flex items-start flex-col justify-center">

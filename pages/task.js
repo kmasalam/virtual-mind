@@ -60,7 +60,6 @@ function Tasks(props) {
                 </>
             )
       }
-      console.log('show page', showPage);
     return (
         <>
         <NavigationBar/>

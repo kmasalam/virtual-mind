@@ -14,12 +14,10 @@ function NavigationBar(props) {
     const [profile,setProfile] = useState(false);
 
     function logoutProfile(e){
-        console.log('clicked');
         e.preventDefault();
         var currentSession = '';
         if(typeof(Storage) !== "undefined"){
             currentSession = sessionStorage.getItem("token")
-            console.log('currentSession',currentSession);
        }
         axios({
             method: 'get',
@@ -50,8 +48,6 @@ function NavigationBar(props) {
        
       }, []);
 
-    
-      console.log('user rfes',profile);
     return (
         <Box className="mb-2 ">
             <Container maxWidth="lg">

@@ -42,7 +42,6 @@ function CreateTaskForm(props) {
         var currentSession = '';
         if(typeof(Storage) !== "undefined"){
             currentSession = sessionStorage.getItem("token")
-            console.log('currentSession',currentSession);
        }
         axios({
             method: 'post',
@@ -55,10 +54,8 @@ function CreateTaskForm(props) {
                 completed: inputvalue.completed,
             }
           }).then(function (response) {
-            console.log(response);
             let statusCode = response.status;
             if(statusCode == '201'){
-                console.log(response);
                 router.push('/task');
             }
           })

@@ -20,7 +20,6 @@ function LoginForm(props) {
 
     function handleChange(e){
         let name = e.target.id;
-        console.log('name is',name);
         let value = e.target.value;
  
         setValue[name] = value
@@ -41,7 +40,6 @@ function LoginForm(props) {
             password: inputvalue.userpass,
          }
        }).then(function (response) {
-         console.log(response);
          let statusCode = response.status;
          if(statusCode == '200'){
             let token = response.data.token;
@@ -50,16 +48,10 @@ function LoginForm(props) {
          }
        })
        .catch(function (error) {
-           console.log('e is', error);
+           console.log(error);
        });
     }
  
-    
-    if(typeof(Storage) !== "undefined"){
-         console.log(sessionStorage.getItem("token"));
-    }
-
-    console.log('errorMessage',errorMessage);
     return (
         <form  noValidate autoComplete="off" className="w-full h-screen flex items-start flex-col justify-center">
            
